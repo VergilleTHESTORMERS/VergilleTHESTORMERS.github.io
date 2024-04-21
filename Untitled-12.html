@@ -14,7 +14,7 @@
 
   
   .overlap {
-    background-color: rgb(250, 250, 250); 
+    background-color: rgb(251, 251, 251); 
     position: relative;
     z-index: 2; 
     margin-top: -35px; 
@@ -25,7 +25,7 @@
   }
 
   .overlap-content {
-    
+    background-color: white;
   }
   .yow{
     text-align: left;
@@ -52,8 +52,7 @@
     <h1 class="yow">GRADE 8 SURVEY FORM</h1>
         <h5 class="yow">This is a Survey Form from a student of 8-JADE</h5>
         <br><br>
-        <h2 class="yow"> 2. Where do you live?</h2><br> <input type="text" placeholder="Kol" id="pangalan1">
-        <br> <br> <br> <br> <button type="button" onclick="nextPage()">Next Page</button>
+        <h2 class="yow"> 2. Where do you live?</h2><br> <input type="text" placeholder="Kol" id="pangalan2"> <br><br><br><br><button type="button" onclick="nextPage()">Next Page</button>
         <button type="button" onclick="prevPage()">Back</button>
        
         </div>
@@ -65,10 +64,9 @@
     <h1 class="yow">GRADE 8 SURVEY FORM</h1>
         <h5 class="yow">This is a Survey Form from a student of 8-JADE</h5>
         <br><br>
-        <h2 class="yow"> 3. What section are you in?</h2><br> <input type="radio" id="pangalan1">8-JADE<br><input type="radio" id="pangalan1">8-TOPAZ<br><input type="radio" id="pangalan1">8-EMERALD<br><input type="radio" id="pangalan1">8-PEARL<br><input type="radio" id="pangalan1">8-AMETHYST<br><input type="radio" id="pangalan1">8-DIAMOND
-        <br> <br> <br> <br> <button type="button" onclick="nextPage()">Next Page</button>
+        <h2 class="yow"> 3. What section are you from?</h2><br> <input type="radio" id="pangalan2" name="8-JADE">8-JADE‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <input type="radio" id="pangalan2" name="8-TOPAZ">8-TOPAZ<br><input type="radio" id="pangalan2" name="8-EMERALD">8-EMERALD‎ ‎ <input type="radio" id="pangalan2" name="8-PEARL">8-PEARL<br><input type="radio" id="pangalan2" name="8-AMETHYST">8-AMETHYST<input type="radio" id="pangalan2" name="8-DIAMOND">8-DIAMOND
+        <br> <br>  <button type="button" onclick="nextPage()">Next Page</button>
         <button type="button" onclick="prevPage()">Back</button>
-       
         </div>
         </div>
 
@@ -156,7 +154,7 @@
     <h1 class="yow">GRADE 8 SURVEY FORM</h1>
         <h5 class="yow">This is a Survey Form from a student of 8-JADE</h5>
         <br><br>
-        <h2 class="yow"> 10. What is your ja?</h2><br> <input type="text" placeholder="Kol" id="pangalan1">
+        <h2 class="yow"> 10. What is your ja?</h2><br> <input type="text" placeholder="Kol" id="pangalan9">
         <br> <br> <br> <br>   
         <button type="button" onclick="prevPage()">Back</button>
         <button type="button" onclick="localstoragers()">Submit</button>
@@ -200,7 +198,7 @@
   var dd=document.getElementById("pangalan8").value;
   var ee=document.getElementById("pangalan9").value;
 
-  localStorage.setItem("pangalan", sg);
+  localStorage.setItem("pangalan", d);
   localStorage.setItem("pangalan1", lr);
   localStorage.setItem("pangalan2", oi);
   localStorage.setItem("pangalan3", tn);
@@ -211,16 +209,7 @@
   localStorage.setItem("pangalan8", dd);
   localStorage.setItem("pangalan9", ee);
 
-  var Name=localStorage.getItem("pangalan",);
-  var gsc=localStorage.getItem("pangalan1",);
-  var nfs=localStorage.getItem("pangalan2",);
-  var jhe=localStorage.getItem("pangalan3",);
-  var mns=localStorage.getItem("pangalan4",);
-  var ffa=localStorage.getItem("pangalan5",);
-  var ggd=localStorage.getItem("pangalan6");
-  var hhq=localStorage.getItem("pangalan7");
-  var iih=localStorage.getItem("pangalan8");
-  var jjm=localStorage.getItem("pangalan9");
+  console.log(localstoragers())
   }
 </script>
 
